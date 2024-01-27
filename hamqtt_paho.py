@@ -34,7 +34,6 @@ class HaMqttPaho(HaMqtt):
         #super().init(environment, base_topic, namespace)
 
     def connect(self):
-        self._mqtt.set
         self._mqtt.connect(self.broker, self.port)
 
     def on_connect(self, func):
